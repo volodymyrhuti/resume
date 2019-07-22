@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in, top=0.5in]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+
+\titleformat{\section}
+{\Large\bfseries}          % entire object formatting
+{}                         % numbering
+{0em}                      % distance between numbering
+{\filcenter}[\titlerule]   % title formatting
+
+\titlespacing{\section}
+{0em}                        % Left margin
+{0.4em}                      % space before
+{0.7em}                      % space after
+
+\titlespacing{\subsection}
+{0em}                      % Left margin
+{0em}                      % space before
+{0em}                      % space after
+
+\titlespacing{\item}
+{0em}                      % Left margin
+{0em}                      % space before
+{0em}                      % space after
+
+\renewcommand{\labelitemi}{}      % hide bullet points for list items
+\setlength{\columnsep}{-10cm}     % decrease justification space between item lists
+\setlength{\parindent}{0pt}       % remove natural indentation for paragraphs
+\setlength{\multicolsep}{-3.0pt}  % reduce spacing before multicols
+\setlist{nolistsep}               % remove spacing above/belowe list items
+
+\renewcommand{\maketitle}{
+    \begin{center}
+    {\huge\bfseries\theauthor}\\
+    \vspace{.25em}
+    \href{volodymyr.huti@gmail.com}{\faMailForward{} volodymyr.huti@gmail.com}\\
+    \href{https://github.com/volodymyrhuti }{\faGithub{} Volodymyr Huti} |
+    \href{https://www.linkedin.com/in/volodymyr-huti-b03a41156/}{\faLinkedinSquare{} Volodymyr Huti}\\
+    Lviv +38(066)4269936 \\
+    \end{center}
+}
+
+\author{Volodymyr Huti}
+\title{R\'esum\'e}
+\date{}
+
+\begin{document}
+\thispagestyle{empty}       % remove page number
+\maketitle
+
+
+\section{Profile}
+A self-motivated and dedicated C developer who is passionate about analyzing and solving problems. I am interested in low level stuff, like compilers, linkers, network protocols, kernels, etc. Throughout my working experience, I have learned how to efficiently use C, C++  and was always trying my best to find the most optimal solution. Currently working on networking related project, as gateway firmware developer for a couple big European Internet Service Providers.
+
+\section{Technical Skills}
+\textbf{Programming Languages:}
+\begin{description}[align=left,leftmargin=3.8cm,style=multiline]
+\item[C/C++] Linux socket programming, STL, Boost, OOP, algorithms, data structures.\\
+             Strong knowledge of programming concepts.
+\item[Shell] Scripting, process/test automation, Linux system administration,\\
+             advanced features, like bash autocompletion scripting.\\
+\item[Networking:] TCP/IP stack, HTTP, SNMP, Samba, Wi-Fi, IGMP, Ethernet
+\item[Operating System:] Linux (preferred), MacOS, Windows
+\item[Development Tools:] Vim, Git, Gdb, Valgrind, Wireshark, Tcpdump, Urxvt/St ...
+\item[General:] some knowledge of \LaTeX, Python, Js, jQuery, Css, Html
+\end{description}
+
+\section{General Skills}
+Languages: Ukrainian (native), English (Upper-Intermediate), Russian\\
+Debugging and troubleshooting of all software layers, e.g. drivers, firmware, gui\\
+Self-motivated and detail-oriented\\
+Hard working
+
+\section{Experience}
+{\bfseries
+Global Logic \hspace*{\fill}Feb. 2018 - Present\\
+}
+\vspace{0.5em}
+C Developer  \hspace*{\fill}Lviv\\
+Worked on two projects developing gateway firmware for multiple European customers.\\
+Was responsible for debugging and troubleshooting gateway related issue on all software layers.\\
+Worked with network protocols and Linux networking internals.\\
+During these projects, I have successfully closed about 100 issue tickets and implemented a couple of features.\\
+
+\textbf{Technology stack:}
+\setlist[description]{font=\normalfont}
+\begin{description}[align=left,leftmargin=3.8cm,style=multiline]
+\item[Languages:] C/C++, Bash, Make, a bit of Python
+\item[Operating Systems:] Linux, sometimes Windows and MacOS
+\item[Networking:] TCP/IP stack, HTTP, SNMP, Samba, Wi-Fi, IGMP, Ethernet
+\item[Build systems:] common Linux build systems and OpenWrt (gateway build system)
+\item[VCS:] Git\\
+\end{description}
+
+\section{Education}
+\textbf{National Unievrsity Lviv Polytechnic}\hspace*{\fill}Lviv\\
+\textbf{Computer Engineering}\hspace*{\fill}2016 - 2020
+
+
+\end{document}
