@@ -52,57 +52,86 @@
 \date{}
 
 \begin{document}
-\thispagestyle{empty}       % remove page number
+\pagenumbering{gobble}      % remove page numbering
 \maketitle
 
-
 \section{Profile}
-A self-motivated and dedicated C developer who is passionate about analyzing and solving problems.
-I am interested in low level stuff, like compilers, linkers, network protocols, kernels, etc.
-Currently working on networking related project, as gateway middleware developer for a couple big
-European Internet Service Providers.
+A self-motivated and dedicated software engineer who is passionate about analyzing and solving problems
+with a background in computer networking. I`m experienced in developing and debugging networking solutions
+for residential/enterprise gateways. My main areas of interest include low level development, Linux kernel and
+it`s networking subsystem, and fintech - automation of investing/trading operations.\\
+Currently developing a Linux Switchdev driver for the ASIC vendor.
 
-\section{Technical Skills}
+\section{Skills}
 \textbf{Programming Languages:}
+% \setlist{parsep=0.01pc}
 \begin{description}[align=left,leftmargin=3.8cm,style=multiline]
 \item[C/C++] Linux socket programming, STL, Boost, OOP, algorithms, data structures.\\
              Strong knowledge of programming concepts.
-\item[Shell] Scripting, process/test automation, Linux system administration,\\
-             advanced features, like bash autocompletion scripting.\\
-\item[Networking:] TCP/IP stack, HTTP, SNMP, Samba, Wi-Fi, IGMP, Ethernet
-\item[Operating System:] Linux (preferred), MacOS, Windows
-\item[Development Tools:] Vim, Git, Gdb, Valgrind, Wireshark, Tcpdump, Urxvt/St ...
-\item[General:] some knowledge of \LaTeX, Python, Js, jQuery, Css, Html
+\item[Networking] L2/L3 - strong knowledge of switching, routing and associated protocols \\
+                  L4 - hands on experience with common protocols like DHCP/DNS/HTTP/... \\
+                  as well, usage/configuration/debugging of associated services/applications\\
+                  Network offloading to ASICs using Switchdev/SONiC models\\
+                  Hands on experience with FIB offloading implementation 
+\item[Linux Kernel] Well aware of kernel subsystems, common interfaces, and mechanisms \\
+                    Practical experience with development of Switchdev drivers \\
+                    Skilled in the kernel research, analysis, debugging and troubleshooting  \\
+                    Versed in the networking implementation, especially routing and neighboring
+\item[Debugging \&\\ Network Virtualization]
+        {\bfseries Userspace:} GDB, Valgrind, PDB, Linux tools ecosystem ...\\
+        {\bfseries Kernelspace:} Ftrace and associated interfaces, GDB, objdump, kasan ... \\
+        {\bfseries Traffic generators:} Ixia, scapy, {\bfseries Network simulators:} GNS3
+\item[Scripting] Bash scripting, process/test automation, Linux system administration,\\
+                 advanced features, like bash autocompletion scripting.
+\item[Build Systems]        General knowledge of buildroot and autotools suite 
+\item[Fintech]              Strong knowledge of trading/investing fundamentals
+\item[Development Tools]    Vim, I3, urxvt, Git, UMLet ...
+\item[Operating System]     {\bfseries Linux (highly preferred)}, macOS, Windows
+\item[General]              Some knowledge of \LaTeX, Python and basic frontend stack
+\item[Languages]            Ukrainian (native), English (Upper-Intermediate), Russian\\
 \end{description}
-
-\section{General Skills}
-Languages: Ukrainian (native), English (Upper-Intermediate), Russian\\
-Debugging and troubleshooting of all software layers, e.g. drivers, middleware, gui\\
-Self-motivated and detail-oriented\\
 
 \section{Experience}
 {\bfseries
-Global Logic \hspace*{\fill}Feb. 2018 - Present\\
+Plvision \hspace*{\fill}Oct. 2019 - Present\\
+}
+\vspace{0.5em}
+Software Engineer  \hspace*{\fill}Lviv\\
+Took part in the development of Switchdev driver for the ASIC vendor
+\begin{description}[align=left,leftmargin=3mm,style=multiline]
+\item[-] Implemented FIB offloading, both driver and SDK sides
+\item[-] Cooperated with architects during features designed
+\item[-] Performed further stabilization/maintenance/troubleshooting of the implemented features
+\item[-] Helped with debugging of the newly found kernel bugs
+\item[-] Did research and analysis of Linux behavior for uncommon configurations and corner cases
+\item[-] Cooperated with Q\&A team durion test design\\
+         Took part in test validation and sometimes implementation
+\item[-] Took part in the development of SONiC course for the new engineers \\
+         Have reasearched and documented the most common developmented activities
+
+\end{description}
+
+\clearpage
+
+{\bfseries
+Global Logic \hspace*{\fill}Feb. 2018 - Oct. 2019\\
 }
 \vspace{0.5em}
 C Developer  \hspace*{\fill}Lviv\\
 Worked on two projects developing gateway middleware for multiple European customers.\\
-Was responsible for debugging and troubleshooting gateway related issues on all software layers.\\
-Worked with network protocols and Linux networking internals.\\
-During these projects, I have successfully closed about 100 issue tickets and implemented a couple of features.\\
-
-% \textbf{Technology stack:}
-% \begin{description}[align=left,leftmargin=3.8cm,style=multiline,font=\normalfont]
-% \item[Languages:] C/C++, Bash, Make, a bit of Python
-% \item[Operating Systems:] Linux, sometimes Windows and MacOS
-% \item[Networking:] TCP/IP stack, HTTP, SNMP, Samba, Wi-Fi, IGMP, Ethernet
-% \item[Build systems:] common Linux build systems and OpenWrt (gateway build system)
-% \item[VCS:] Git\\
-% \end{description}
+Responsibilities included:
+\begin{description}[align=left,leftmargin=3mm,style=multiline]
+\item[-] Was responsible for troubleshooting middleware issues \\
+         Has resolved over 100 issue tickets, including crash fixes, resource leakage,
+         wrong configuration ...
+\item[-] Took part in GUI porting from one gateway to another \\
+         Has successfully ported multiple pages, like Index and WiFi \\
+         Fixed emerging issues and crashes afterward 
+\item[-] Took part in the driver porting and further troubleshooting
+\end{description}
 
 \section{Education}
-\textbf{National Unievrsity Lviv Polytechnic}\hspace*{\fill}Lviv\\
+\textbf{National University Lviv Polytechnic}\hspace*{\fill}Lviv\\
 \textbf{Computer Engineering}\hspace*{\fill}2016 - 2020
-
 
 \end{document}
