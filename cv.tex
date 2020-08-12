@@ -1,5 +1,4 @@
 \documentclass{article}
-
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage[margin=1in, top=0.5in]{geometry}
@@ -8,6 +7,9 @@
 \usepackage{hyperref}
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[lutf8x]{luainputenc}
 
 \titleformat{\section}
 {\Large\bfseries}          % entire object formatting
@@ -40,10 +42,14 @@
     \begin{center}
     {\huge\bfseries\theauthor}\\
     \vspace{.25em}
+    % \href{volodymyr.huti@gmail.com}{volodymyr.huti@gmail.com}\\
+    % \href{https://www.linkedin.com/in/volodymyr-huti/}{linkedin/volodymyr-huti} |
+    % \href{https://www.linkedin.com/in/volodymyr-huti/}{git/volodymyrhuti}\\
+    % volodymyr-huti
     \href{volodymyr.huti@gmail.com}{\faMailForward{} volodymyr.huti@gmail.com}\\
     \href{https://github.com/volodymyrhuti }{\faGithub{} Volodymyr Huti} |
     \href{https://www.linkedin.com/in/volodymyr-huti-b03a41156/}{\faLinkedinSquare{} Volodymyr Huti}\\
-    Lviv +38(066)4269936 \\
+    Ukraine Lviv, +38(066)4269936 \\
     \end{center}
 }
 
@@ -58,38 +64,39 @@
 \section{Profile}
 A self-motivated and dedicated software engineer who is passionate about analyzing and solving problems
 with a background in computer networking. I`m experienced in developing and debugging networking solutions
-for residential/enterprise gateways. My main areas of interest include low level development, Linux kernel and
+for residential/enterprise gateways. My main areas of interest include low-level development, Linux kernel and
 it`s networking subsystem, and fintech - automation of investing/trading operations.\\
 Currently developing a Linux Switchdev driver for the ASIC vendor.
 
-\section{Skills}
+\section{Technical Skills}
 \textbf{Programming Languages:}
 % \setlist{parsep=0.01pc}
-\begin{description}[align=left,leftmargin=3.8cm,style=multiline]
-\item[C/C++] Linux socket programming, STL, Boost, OOP, algorithms, data structures.\\
-             Strong knowledge of programming concepts.
+\begin{description}[align=left,leftmargin=3.8cm,style=multiline,font=\mdseries]
+\item[C/C++] STL, socket programming, C++98/11/14, POSIX API, OOP
+\item[Computer Science] Algorithms, data structures, computer networking
 \item[Networking] L2/L3 - strong knowledge of switching, routing and associated protocols \\
-                  L4 - hands on experience with common protocols like DHCP/DNS/HTTP/... \\
+                  L4 - hands-on experience with common protocols like DHCP/DNS/HTTP/... \\
                   as well, usage/configuration/debugging of associated services/applications\\
                   Network offloading to ASICs using Switchdev/SONiC models\\
-                  Hands on experience with FIB offloading implementation 
+                  Hands-on experience with FIB offloading implementation 
 \item[Linux Kernel] Well aware of kernel subsystems, common interfaces, and mechanisms \\
-                    Practical experience with development of Switchdev drivers \\
+                    Hands-on experience with development of Switchdev drivers \\
                     Skilled in the kernel research, analysis, debugging and troubleshooting  \\
                     Versed in the networking implementation, especially routing and neighboring
-\item[Debugging \&\\ Network Virtualization]
-        {\bfseries Userspace:} GDB, Valgrind, PDB, Linux tools ecosystem ...\\
-        {\bfseries Kernelspace:} Ftrace and associated interfaces, GDB, objdump, kasan ... \\
+\item[Debugging]
+        {\bfseries Userspace:} GDB, Valgrind, PDB, Wireshark, Linux tools ecosystem ...\\
+        {\bfseries Kernelspace:} Ftrace and associated interfaces, GDB, objdump, kasan ...
+\item[Virtualization]
         {\bfseries Traffic generators:} Ixia, scapy, {\bfseries Network simulators:} GNS3
-\item[Scripting] Bash scripting, process/test automation, Linux system administration,\\
-                 advanced features, like bash autocompletion scripting.
-\item[Build Systems]        General knowledge of buildroot and autotools suite 
-\item[Fintech]              Strong knowledge of trading/investing fundamentals
-\item[Development Tools]    Vim, I3, urxvt, Git, UMLet ...
-\item[Operating System]     {\bfseries Linux (highly preferred)}, macOS, Windows
-\item[General]              Some knowledge of \LaTeX, Python and basic frontend stack
-\item[Languages]            Ukrainian (native), English (Upper-Intermediate), Russian\\
+\item[Scripting]            Bash scripting, process/test automation, Linux system administration
+\item[General]              Vim, Git, Docker, GNU Make/Autotools, basic \LaTeX/Python/frontend stack
 \end{description}
+
+\section{Soft Skills}
+Languages: Ukrainian (native), English (Upper-Intermediate), Russian (Professional working proficiency)\\
+Detail-oriented, self-starter with a strong sense of ownership \\
+Deep analytical, problem-solving, debugging and troubleshooting skills \\
+Strong communication and teamwork skills
 
 \section{Experience}
 {\bfseries
@@ -99,15 +106,15 @@ Plvision \hspace*{\fill}Oct. 2019 - Present\\
 Software Engineer  \hspace*{\fill}Lviv\\
 Took part in the development of Switchdev driver for the ASIC vendor
 \begin{description}[align=left,leftmargin=3mm,style=multiline]
-\item[-] Implemented FIB offloading, both driver and SDK sides
-\item[-] Cooperated with architects during features designed
-\item[-] Performed further stabilization/maintenance/troubleshooting of the implemented features
+\item[-] Implemented FIB offloading, both userspace driver and firmware sides
+\item[-] Performed further stabilization/maintenance/troubleshooting/optimization
+\item[-] Cooperated with architects during features design
+\item[-] Cooperated with Q\&A team durion test design\\
+         Performed validation/fixing of 40+ IPv4 tests and developed some by myself
 \item[-] Helped with debugging of the newly found kernel bugs
 \item[-] Did research and analysis of Linux behavior for uncommon configurations and corner cases
-\item[-] Cooperated with Q\&A team durion test design\\
-         Took part in test validation and sometimes implementation
-\item[-] Took part in the development of SONiC course for the new engineers \\
-         Have researched and documented the most common development activities
+\item[-] Developed a practical part of the SONiC NOS rump-up course for the new engineers \\
+         Took part as a mentor during the initial training sessions
 
 \end{description}
 
@@ -124,14 +131,18 @@ Responsibilities included:
 \item[-] Was responsible for troubleshooting middleware issues \\
          Has resolved over 100 issue tickets, including crash fixes, resource leakage,
          wrong configuration ...
-\item[-] Took part in GUI porting from one gateway to another \\
-         Has successfully ported multiple pages, like Index and WiFi \\
-         Fixed emerging issues and crashes afterward 
-\item[-] Took part in the driver porting and further troubleshooting
+\item[-] Took part in the driver porting and further troubleshooting \\
+         Ported multiple utilities and demons from other projects
+\item[-] Cooperated with foreign teams for debugging complex driver/middleware issues
+\item[-] Did debugging of complex stability bugs
+\item[-] As part of another project ported about 20\% of GUI from one gateway to another \\
+         Designed, implemented and extended middleware functionality for the new GUI \\
+         Fixed emerging issues and crashes afterward \\
+         Implemented new GUI elements, like the WiFi extenders state display 
 \end{description}
 
 \section{Education}
 \textbf{National University Lviv Polytechnic}\hspace*{\fill}Lviv\\
-\textbf{Computer Engineering}\hspace*{\fill}2016 - 2020
+\textbf{Bachelor of Science Degree in Computer Engineering}\hspace*{\fill}2016 - 2020
 
 \end{document}
