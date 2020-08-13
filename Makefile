@@ -18,3 +18,7 @@ txt:
 
 check:
 	aspell -t check cv.tex
+
+# https://pdf2doc.com/
+# https://www.online-convert.com/result/f8099309-b512-4cdb-a74a-5c09acba6c64
+# https://smallpdf.com/pdf-to-word
